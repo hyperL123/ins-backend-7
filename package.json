@@ -1,0 +1,53 @@
+{
+  "name": "instanclone",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server",
+    "migrate": "npx prisma migrate dev",
+    "studio": "npx prisma studio",
+    "start": "node build/server.js",
+    "build": "babel src -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyperL123/InstClone-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyperL123/InstClone-backend/issues"
+  },
+  "homepage": "https://github.com/hyperL123/InstClone-backend#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "@graphql-tools/load-files": "^6.6.0",
+    "@graphql-tools/merge": "^8.3.0",
+    "@graphql-tools/schema": "^8.5.0",
+    "@prisma/client": "^4.1.0",
+    "apollo-server-express": "^3.8.1",
+    "aws-sdk": "^2.1185.0",
+    "babel-cli": "^6.26.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "graphql": "^16.5.0",
+    "graphql-tools": "^8.3.0",
+    "graphql-upload": "^13.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.9",
+    "nodemon": "^2.0.19",
+    "prisma": "^4.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.7.4"
+  }
+}
