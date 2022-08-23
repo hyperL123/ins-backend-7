@@ -84,7 +84,7 @@ function _startServer() {
             _context3.next = 9;
             return new Promise(function (r) {
               return app.listen({
-                port: 4000
+                port: process.env.PORT || 4000
               }, r);
             });
 
